@@ -2,8 +2,7 @@
   var pageItemClass = 'page-item';
   var activeClass = 'active';
 
-  var base = $('link[type*="rss+xml"]')
-    .attr('href').replace(/\/(feed|rss)\/?$/i, '') || '';
+  var base = $.base;
 
   function pageItem (text, href) {
     return $('<a>')

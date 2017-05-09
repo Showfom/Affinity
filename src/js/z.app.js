@@ -4,6 +4,28 @@ $(function() {
 	};
 	var config = $.extend({}, _default, $('#theme-config').data());
 
+	var defReplace = {
+		rand: function () {
+			return ~~(Math.random() * 10000000);
+		},
+		base: $.base
+	};
+
+	function replaceVariable (str, replacement) {
+		var rules = $.extend({}, defReplace, replacement);
+		return str.replace(/%(?:\{\s*(\w+)\s*\}|(\w+))/g, function (z, a, b) {
+			var variable = a || b;
+			var r = rules[variable];
+			if (!r) return z;
+
+			if ($.isFunction(r)) {
+				return r(variable);
+			}
+
+			return r;
+		});
+	}
+
 	/* Highlight all code blocks */
 	$('pre').each(function(i, block) {
 	  hljs.highlightBlock(block);
@@ -79,5 +101,17 @@ $(function() {
 					.append(tocRoot)
 					.prepend($('<b>').text(config.tocName))
 			);
+	})();
+
+	/* Set a default cover image if there's none (in partials/loop.hbs) */
+	(function () {
+		var defImg = replaceVariable(config.defCoverImage);
+		if (!defImg) return ;
+
+		$('a.no-cover').each(function (i, el) {
+			$(el)
+				.removeClass('no-cover')
+				.css({backgroundImage: 'url(' + defImg + ')'});
+		});
 	})();
 });
