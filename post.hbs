@@ -1,0 +1,52 @@
+{{!< default}}
+
+{{#post}}
+
+<article class="content-post {{post_class}}" role="main">
+  <div class="content-post-title">
+    <h1>{{title}}</h1>
+  </div>
+  <div class="content-post-meta">
+    <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+  </div>
+  <div class="content-post-body">
+    {{content}}
+  </div>
+  <div class="content-post-meta post-meta-tags">
+    {{tags}}
+  </div>
+  <div class="content-post-author">
+    {{#author}}
+    <div class="tile">
+      {{#if image}}
+      <div class="tile-icon">
+        <figure class="avatar avatar-lg">
+          <img src="{{image}}" />
+        </figure>
+      </div>
+      {{/if}}
+      <div class="tile-content">
+        <p class="tile-title"><strong>{{name}}</strong></p>
+        {{#if bio}}
+            <p class="tile-subtitle">{{bio}}</p>
+        {{else}}
+            <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+        {{/if}}
+      </div>
+    </div>
+    {{/author}}
+  </div>
+   <div class="content-post-comments">
+    <div class="btn btn-primary btn-block">Post your comments here</a></div>
+  </div>
+<!-- You can insert your Disqus universal code here, get from https://disqus.com/admin/universalcode/#configuration-variables*/ -->                                
+<!-- Insert Isso, Disqus or similar services' JS code here -->
+<!-- Please use data-isso-css="false" and <section id="isso-thread" class="content-post-comments"></section> if you use isso -->
+<!-- isso example start
+  	<script data-isso="https://example.com/isso/"
+        data-isso-css="false"
+        src="https://example.com/isso/js/embed.min.js" async></script>
+<section id="isso-thread"  class="content-post-comments"></section>
+isso example end -->
+</article>
+{{/post}}
