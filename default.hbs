@@ -13,8 +13,7 @@
     {{!-- Brand icon --}}
 <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
     {{!-- Styles'n'Scripts --}}
-<link rel="stylesheet" type="text/css" href="{{asset "css/spectre.min.css"}}" />
-<link rel="stylesheet" type="text/css" href="{{asset "css/screen.min.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "affinity.min.css"}}" />
 
     {{!-- Ghost outputs important style and meta data with this tag --}}
 {{ghost_head}}
@@ -46,12 +45,8 @@
     </section>
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-    <script type="text/javascript" src="{{asset "js/jquery-1.12.4.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "affinity.min.js"}}"></script>
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
-    {{!-- The main JavaScript file for Affinity --}}
-    <script type="text/javascript" src="{{asset "js/app.min.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/jquery.pagination.min.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/highlight.min.js"}}"></script>
 </body>
 </html>

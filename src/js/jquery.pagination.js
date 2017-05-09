@@ -1,14 +1,19 @@
 (function ($) {
   var pageItemClass = 'page-item';
   var activeClass = 'active';
-  
+
   var base = $('link[type*="rss+xml"]')
     .attr('href').replace(/\/(feed|rss)\/?$/i, '') || '';
-  
-  function arrow(text) {
-    return $('<b>')
-      .addClass('arrow ' + pageItemClass)
+
+  function pageItem (text, href) {
+    return $('<a>')
+      .attr('href', href || 'javascript:void(0)')
+      .addClass(pageItemClass)
       .text(text);
+  }
+
+  function arrow(text) {
+    return pageItem(text).addClass('arrow');
   }
 
   function genPageUrl (page) {
@@ -18,10 +23,7 @@
 
   function pagination ($el, current, max) {
     function pageEl (page) {
-      var r = $('<a>')
-        .attr('href', genPageUrl(page))
-        .addClass(pageItemClass)
-        .text(page);
+      var r = pageItem(page, genPageUrl(page));
 
       if (page == current) {
         r.addClass(activeClass);
@@ -73,4 +75,3 @@
     });
   });
 })(jQuery);
-
