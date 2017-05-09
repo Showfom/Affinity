@@ -46,15 +46,15 @@ Active it
 
 ## Screenshots
 
-## Desktop
+### Desktop
 
 ![](https://sb.sb.sb/post-images/affinity-desktop.png)
 
-## iPad
+### iPad
 
 ![](https://sb.sb.sb/post-images/affinity-ipad.png)
 
-## Mobile
+### Mobile
 
 ![](https://sb.sb.sb/post-images/affinity-mobile.png)
 
@@ -144,15 +144,15 @@ Affinity 采用 jQuery 实现了章节目录和首页分页功能，不需要任
 
 ## 截图预览
 
-## 桌面浏览器
+### 桌面浏览器
 
 ![](https://sb.sb.sb/post-images/affinity-desktop.png)
 
-## iPad
+### iPad
 
 ![](https://sb.sb.sb/post-images/affinity-ipad.png)
 
-## 手机
+### 手机
 
 ![](https://sb.sb.sb/post-images/affinity-mobile.png)
 
