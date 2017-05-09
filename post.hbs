@@ -38,16 +38,25 @@
   </div>
    <div class="content-post-comments">
     <div class="btn btn-primary btn-block">Post your comments here</a></div>
-    <section id="isso-thread"></section>
   </div>
-<!-- You can insert your Disqus universal code here, get from https://disqus.com/admin/universalcode/#configuration-variables*/ -->
-<!-- Insert Isso, Disqus or similar services' JS code here -->
-<!-- Please use data-isso-css="false" and <section id="isso-thread" class="content-post-comments"></section> if you use isso -->
-<!-- isso example start
-  	<script data-isso="https://example.com/isso/"
-        data-isso-css="false"
-        src="https://example.com/isso/js/embed.min.js" async></script>
-<section id="isso-thread"  class="content-post-comments"></section>
-isso example end -->
+{{!--
+
+You can insert your Disqus universal code below this comment block.
+Get the code: https://disqus.com/admin/universalcode/
+
+You will need to fix the thread count in theme.
+
+---
+
+To insert Isso, please specify `data-isso-css="false"`.
+
+Example (Code injection - footer):
+  <script data-isso="https://example.com/isso/"
+          data-isso-css="false"
+          src="https://example.com/isso/js/embed.min.js" async></script>
+
+--}}
+
+  <section id="isso-thread" class="content-post-comments"></section>
 </article>
 {{/post}}
