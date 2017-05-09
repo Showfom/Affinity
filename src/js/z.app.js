@@ -1,4 +1,8 @@
 $(function() {
+	var d = document;
+	var body = d.body;
+	var style = d.createElement('style');
+
 	var _default = {
 		tocName: 'Contents'
 	};
@@ -49,7 +53,7 @@ $(function() {
 		function uniqueId (id) {
 			var r = 'h-' + id;
 			var i = 2;
-			while (document.getElementById(r)) {
+			while (d.getElementById(r)) {
 				r = id + '-' + i;
 				i++;
 			}
@@ -59,9 +63,11 @@ $(function() {
 		function generateItem (el) {
 			var $el = $(el);
 			var a = $('<a>').html($el.html());
-			var id = uniqueId($el.attr('id') || strip($el.text()));
-
-			$('<span>').attr('id', id).prependTo($el);
+			var id = $el.attr('id');
+			if (!id) {
+				id = uniqueId(strip($el.text()));
+				$('<span>').attr('id', id).prependTo($el);
+			}
 
 			a[0].href = '#' + id;
 			return $('<li>').append(a);
@@ -101,6 +107,15 @@ $(function() {
 					.append(tocRoot)
 					.prepend($('<b>').text(config.tocName))
 			);
+
+		fixTocScroll();
+		/* if there's already hash prepended to the url, scroll to it. */
+		function fixTocScroll () {
+			var el = d.getElementById(location.hash.slice(1));
+			if (el) {
+				scrollTo(0, $(el).position().top);
+			}
+		}
 	})();
 
 	/* Set a default cover image if there's none (in partials/loop.hbs) */
@@ -114,4 +129,19 @@ $(function() {
 				.css({backgroundImage: 'url(' + defImg + ')'});
 		});
 	})();
+
+	/* Setup default font if request */
+	(function () {
+		var font = config.font;
+		if (!font) return ;
+		var defaultFontFamily = getComputedStyle(body).fontFamily;
+		style.textContent += replaceVariable('body{font-family:%f,%d}', {
+			f: font,
+			d: defaultFontFamily
+		});
+	})();
+
+	if (style.textContent.length > 0) {
+		$(body).append(style);
+	}
 });
