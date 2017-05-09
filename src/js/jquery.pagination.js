@@ -1,4 +1,4 @@
-(function ($) {
+$(function () {
   var pageItemClass = 'page-item';
   var activeClass = 'active';
 
@@ -73,4 +73,4 @@
       pagination($self, $self.data('current'), $self.data('max'));
     });
   });
-})(jQuery);
+});
