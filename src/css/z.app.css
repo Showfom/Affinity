@@ -3,6 +3,8 @@
 }
 
 /* Fix issue #3 */
-.content-post-body p>img {
+.content-post-body p > img
+, .content-post-body > iframe
+{
   max-width: 100%;
 }
