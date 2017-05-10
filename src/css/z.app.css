@@ -8,3 +8,14 @@
 {
   max-width: 100%;
 }
+
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 2px 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+}
