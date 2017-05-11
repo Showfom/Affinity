@@ -10,12 +10,12 @@
 }
 
 
-td, th {
+td:not([class]), th:not([class]) {
   border: 1px solid #ccc;
   padding: 2px 0.5em;
 }
 
-table {
+table:not([class]) {
   border-collapse: collapse;
   max-width: 100%;
 }
