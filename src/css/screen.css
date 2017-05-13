@@ -277,7 +277,7 @@
   margin-bottom: 1rem;
 }
 .isso-postbox .textarea-wrapper .textarea {
-  min-height: 6rem;
+  min-height: 8em;
 }
 .isso-postbox .textarea-wrapper .textarea,
 .isso-postbox .auth-section .input-wrapper input {
@@ -534,6 +534,17 @@ http://zenorocha.mit-license.org
   }
   .section .section-content .content-post .toc ul {
     margin-bottom: 0;
+  }
+  .section .section-content .auth-section {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .section .section-content .auth-section .input-wrapper,
+  .section .section-content .auth-section .post-action {
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    padding-right: 0;
+    width: 100%;
   }
   .section .section-footer {
     position: static;
