@@ -10,7 +10,7 @@ var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 var autoprefix= new LessPluginAutoPrefix({ browsers: ["last 4 versions"] });
 
 gulp.task('watch', function() {
-    gulp.watch('./**/*.less', ['build']);
+    gulp.watch('./**/*.less', ['build', 'minify']);
 });
 
 gulp.task('build', function() {
