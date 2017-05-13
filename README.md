@@ -20,7 +20,7 @@ Affinity is built with ToC (table of contents) and pagination support without Gh
 * jQuery ToC and Pagination by [@JixunMoe](https://jixun.moe/)
 
 ### CSS Framework
-* spectre.css [https://picturepan2.github.io/spectre/](https://picturepan2.github.io/spectre/)
+* Spectre.css [https://picturepan2.github.io/spectre/](https://picturepan2.github.io/spectre/)
 
 ## Author
 * [@Showfom](https://github.com/Showfom)
