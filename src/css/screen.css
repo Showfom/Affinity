@@ -222,6 +222,10 @@
   border: 0;
   border-top: .1rem solid #eee;
 }
+.content-post .content-post-body img {
+  height: auto;
+  max-width: 100%;
+}
 .content-post .content-post-author {
   border-top: .1rem solid #eee;
   margin-top: 4rem;
@@ -479,7 +483,7 @@ http://zenorocha.mit-license.org
     height: auto;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .section {
     -ms-flex-direction: column;
     flex-direction: column;
