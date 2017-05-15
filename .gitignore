@@ -5,3 +5,6 @@ demo/
 !.gitignore
 !.gitattributes
 !.csscomb.json
+assets/*.min.js
+assets/*.min.css
+src/css
