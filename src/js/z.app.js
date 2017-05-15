@@ -14,6 +14,12 @@ $(function() {
 		},
 		base: $.base
 	};
+	
+	function scrollTop (top) {
+		// FIXME: only change one of the height.
+		$('#content').scrollTop(top);
+		$(window).scrollTop(top);
+	}
 
 	function replaceVariable (str, replacement) {
 		var rules = $.extend({}, defReplace, replacement);
@@ -47,7 +53,7 @@ $(function() {
 		}
 
 		function strip (str) {
-			return str.replace(/[^a-zA-Z0-9-_]/g, '');
+			return str.replace(/\s/g, '-');
 		}
 
 		function uniqueId (id) {
@@ -113,7 +119,7 @@ $(function() {
 		function fixTocScroll () {
 			var el = d.getElementById(location.hash.slice(1));
 			if (el) {
-				scrollTo(0, $(el).position().top);
+				scrollTop($(el).position().top);
 			}
 		}
 	})();
