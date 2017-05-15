@@ -1,3 +1,4 @@
+/*! jQuery.pagination for Ghost | (c) Jixun | MIT License */
 $(function () {
   var pageItemClass = 'page-item';
   var activeClass = 'active';
@@ -6,7 +7,7 @@ $(function () {
 
   function pageItem (text, href) {
     return $('<a>')
-      .attr('href', href || 'javascript:void(0)')
+      .attr('href', href || 'javascript:;')
       .addClass(pageItemClass)
       .text(text);
   }
