@@ -4,6 +4,7 @@
     "name": "Showfom Guo",
     "url": "https://sb.sb/ghost-theme-affinity/"
   },
+  "contributors": "https://github.com/Showfom/Affinity/graphs/contributors",
   "demo": "https://ghost.demo.sb/affinity/",
   "description": "Affinity is a clean, minimal, modern and responsive theme that focus on content for Ghost.",
   "devDependencies": {
@@ -47,5 +48,5 @@
     "desktop": "assets/affinity-desktop.png",
     "mobile": "assets/affinity-desktop.png"
   },
-  "version": "1.0.0"
+  "version": "1.2.0"
 }
