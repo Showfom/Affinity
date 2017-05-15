@@ -8,3 +8,5 @@ demo/
 assets/*.min.js
 assets/*.min.css
 src/css
+affinity/README.md
+build/*.zip

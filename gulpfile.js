@@ -34,6 +34,8 @@ function move_header (file, enc, cb) {
 	cb(null, file);
 }
 
+var assetsDir = './affinity/assets';
+
 gulp.task('watch', function() {
     gulp.watch('./**/*.less', ['build', 'minify']);
 });
@@ -55,7 +57,7 @@ gulp.task('minify', function() {
             suffix: '.min'
         }))
 		.pipe(through.obj(move_header))
-        .pipe(gulp.dest('./assets'));
+        .pipe(gulp.dest(assetsDir));
     gulp.src('./src/js/**/*.js')
         .pipe(uglify({
 			preserveComments: 'license',
@@ -68,7 +70,7 @@ gulp.task('minify', function() {
             suffix: '.min'
         }))
 		.pipe(through.obj(move_header))
-        .pipe(gulp.dest('./assets'));
+        .pipe(gulp.dest(assetsDir));
 });
 
 gulp.task('default', ['build']);
