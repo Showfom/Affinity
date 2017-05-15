@@ -5,8 +5,8 @@ demo/
 !.gitignore
 !.gitattributes
 !.csscomb.json
-assets/*.min.js
-assets/*.min.css
+affinity/assets/*.min.js
+affinity/assets/*.min.css
 src/css
 affinity/README.md
 build/*.zip
