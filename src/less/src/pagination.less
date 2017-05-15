@@ -1,0 +1,39 @@
+// Pagination
+.pagination {
+  display: flex;
+  margin-bottom: 4rem;
+  padding: 1rem;
+
+  span {
+    &.page-item {
+      display: inline-block;
+      margin: 0 .2rem;
+      padding: .6rem .4rem;
+    }
+  }
+
+  a {
+    &.page-item {
+      border-radius: @border-radius;
+      color: @gray-color-dark;
+      display: inline-block;
+      margin: 0 .2rem;
+      padding: .6rem .8rem;
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        color: @primary-color;
+      }
+      &[disabled],
+      &.disabled {
+        cursor: default;
+        opacity: .5;
+        pointer-events: none;
+      }
+      &.active {
+        background: @primary-color;
+        color: @light-color;
+      }
+    }
+  }
+}

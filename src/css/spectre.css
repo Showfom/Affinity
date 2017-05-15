@@ -500,7 +500,7 @@ mark {
   background: #ffe9b3;
   border-radius: .2rem;
   color: #404040;
-  display: inline-block;
+  display: inline;
   line-height: 1;
   padding: .3rem .4rem;
   vertical-align: baseline;
@@ -511,7 +511,7 @@ kbd {
   border-radius: .2rem;
   box-shadow: 0 .1rem 0 rgba(51, 51, 51, .2);
   color: #333;
-  display: inline-block;
+  display: inline;
   line-height: 1;
   padding: .3rem .4rem;
   vertical-align: baseline;
@@ -1157,7 +1157,7 @@ input.disabled + .form-icon {
   background: #dbdbdb;
   border-radius: .2rem;
   color: #4d4d4d;
-  display: inline-block;
+  display: inline;
   line-height: 1;
   padding: .3rem .4rem;
   vertical-align: baseline;
@@ -1182,10 +1182,11 @@ code {
   background: #fdf4f4;
   border-radius: .2rem;
   color: #e06870;
-  display: inline-block;
+  display: inline;
   line-height: 1;
   padding: .3rem .4rem;
   vertical-align: baseline;
+  word-break: break-all;
 }
 pre {
   border-radius: .2rem;
