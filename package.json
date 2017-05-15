@@ -1,48 +1,50 @@
 {
-    "author": {
-        "email": "showfom@gmail.com",
-        "name": "Showfom Guo",
-        "url": "https://sb.sb/ghost-theme-affinity/"
-    },
-    "demo": "https://ghost.demo.sb/affinity/",
-    "description": "Affinity is a clean, minimal, modern and responsive theme that focus on content for Ghost.",
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-clean-css": "^3.0.3",
-        "gulp-csscomb": "^3.0.8",
-        "gulp-less": "^3.3.0",
-        "gulp-rename": "^1.2.2",
-        "less-plugin-autoprefix": "^1.5.1"
-    },
-    "engines": {
-        "ghost": ">=0.9.0 <1.0.0"
-    },
-    "gpm": {
-        "categories": [
-            "Minimal",
-            "Clean",
-            "Responsive",
-            "Modern",
-            "Magzine",
-            "Personal Blogs"
-        ],
-        "type": "theme"
-    },
-    "keywords": [
-        "affinity",
-        "spectre",
-        "showfom",
-        "theme"
+  "author": {
+    "email": "showfom@gmail.com",
+    "name": "Showfom Guo",
+    "url": "https://sb.sb/ghost-theme-affinity/"
+  },
+  "demo": "https://ghost.demo.sb/affinity/",
+  "description": "Affinity is a clean, minimal, modern and responsive theme that focus on content for Ghost.",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2",
+    "less-plugin-autoprefix": "^1.5.1"
+  },
+  "engines": {
+    "ghost": ">=0.9.0 <1.0.0"
+  },
+  "gpm": {
+    "categories": [
+      "Minimal",
+      "Clean",
+      "Responsive",
+      "Modern",
+      "Magzine",
+      "Personal Blogs"
     ],
-    "license": "MIT",
-    "name": "Affinity",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Showfom/Affinity.git"
-    },
-    "screenshots": {
-        "desktop": "assets/affinity-desktop.png",
-        "mobile": "assets/affinity-desktop.png"
-    },
-    "version": "1.0.0"
+    "type": "theme"
+  },
+  "keywords": [
+    "affinity",
+    "spectre",
+    "showfom",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "Affinity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Showfom/Affinity.git"
+  },
+  "screenshots": {
+    "desktop": "assets/affinity-desktop.png",
+    "mobile": "assets/affinity-desktop.png"
+  },
+  "version": "1.0.0"
 }

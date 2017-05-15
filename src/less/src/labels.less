@@ -1,0 +1,21 @@
+// Labels
+.label {
+  .label-base();
+  .label-variant(lighten(@body-font-color, 5%), @bg-color);
+
+  &.label-primary {
+    .label-variant(@light-color, @primary-color);
+  }
+
+  &.label-success {
+    .label-variant(@light-color, @control-color-success);
+  }
+
+  &.label-warning {
+    .label-variant(@light-color, @control-color-warning);
+  }
+
+  &.label-error {
+    .label-variant(@light-color, @control-color-error);
+  }
+}

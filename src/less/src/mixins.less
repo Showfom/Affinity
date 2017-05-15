@@ -1,0 +1,42 @@
+// Core mixins
+.clearfix() {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+// Component focus shadow
+.control-shadow(@color: @dark-color) {
+  box-shadow: 0 0 0 .2rem fade(@color, 15%);
+}
+
+// Component transition
+.control-transition() {
+  transition: all .2s ease;
+}
+
+// Toast variant
+.toast-variant(@color: @dark-color) {
+  background: fade(@color, 90%);
+  border-color: @color;
+}
+
+// Label base style
+.label-base() {
+  border-radius: @border-radius;
+  display: inline;
+  line-height: 1;
+  padding: .3rem .4rem;
+  vertical-align: baseline;
+}
+
+.label-variant(@color: @light-color, @bg-color: @primary-color) {
+  background: @bg-color;
+  color: @color;
+}
+
+.shadow-variant(@offset) {
+  box-shadow: 0 @offset (@offset+.1rem)*2 fade(@dark-color, 30%);
+}
