@@ -1,8 +1,12 @@
 /*! ghost.toc for affinity | (c) Jixun | MIT License */
-(function () {
+(function (config) {
+	'use strict';
+
 	var root = $('.content-post-body');
 	var headings = $('h1,h2,h3,h4,h5,h6', root);
-	if (headings.length === 0) return ;
+	if (headings.length === 0) {
+		return ;
+	}
 
 	var i = 0;
 	function getLv(e) {
@@ -16,7 +20,7 @@
 	function uniqueId (id) {
 		var r = 'h-' + id;
 		var i = 2;
-		while (d.getElementById(r)) {
+		while (document.getElementById(r)) {
 			r = id + '-' + i;
 			i++;
 		}
@@ -38,7 +42,9 @@
 
 	function processLevel (tocs) {
 		var heading = headings[i];
-		if (!heading) return tocs;
+		if (!heading) {
+			return tocs;
+		}
 
 		var level = getLv(heading);
 
@@ -75,7 +81,7 @@
 	/* if there's already hash prepended to the url, scroll to it. */
 
 	function fixTocScroll () {
-		var el = d.getElementById(location.hash.slice(1));
+		var el = document.getElementById(location.hash.slice(1));
 		if (el) {
 			scrollTop($(el).position().top);
 		}
@@ -86,4 +92,4 @@
 		$('#content').scrollTop(top);
 		$(window).scrollTop(top);
 	}
-})();
+})($.j.m_config);

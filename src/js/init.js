@@ -1,4 +1,6 @@
 (function () {
+	'use strict';
+
 	var style = document.createElement('style');
   document.body.appendChild(style);
 
@@ -9,7 +11,7 @@
 
 	var defReplace = {
 		rand: function () {
-			return ~~(Math.random() * 10000000);
+			return Math.floor(Math.random() * 10000000);
 		},
 		base: $.base
 	};
