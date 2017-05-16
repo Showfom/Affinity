@@ -5,6 +5,7 @@ demo/
 !.gitignore
 !.gitattributes
 !.csscomb.json
+!.jshintrc
 src/css
 
 build/*.zip
