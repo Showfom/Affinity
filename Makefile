@@ -9,3 +9,6 @@ all:
 	echo $(comment) > affinity/.build
 	rm -f build/affinity-$(commit_short).zip
 	zip -9llrX build/affinity-$(commit_short).zip affinity
+
+clean:
+	rm -rf build/*.zip
