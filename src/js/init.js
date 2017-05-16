@@ -17,7 +17,8 @@
 	};
 
   var _default = {
-  	tocName: 'Contents'
+  	tocName: 'Contents',
+		tocComments: 'Comments'
   };
 
   $.j = {

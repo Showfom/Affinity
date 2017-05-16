@@ -19,6 +19,8 @@
 | `toc-name` | 章节目录 ToC 的标题文字 | `Contents` |
 | `def-cover-image` | 没有提供文章头图时，自动显示的头图。<br>可使用内置变量。 | `https://example.com/no-image.png?%rand` |
 | `font` | 覆盖字体 | `'Microsoft YaHei UI', 'Fallback font 2'` |
+| `toc-comments` | 章节目录标题文字 | 章节目录文字 |
+
 
 ---
 

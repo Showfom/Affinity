@@ -27,17 +27,22 @@
 		return r;
 	}
 
+	function generateLink (html, id) {
+		var a = $('<a>')
+			.html(html)
+			.attr('href', '#' + id);
+		return $('<li>').append(a);
+	}
+
 	function generateItem (el) {
 		var $el = $(el);
-		var a = $('<a>').html($el.html());
 		var id = $el.attr('id');
 		if (!id) {
 			id = uniqueId(strip($el.text()));
 			$('<span>').attr('id', id).prependTo($el);
 		}
 
-		a[0].href = '#' + id;
-		return $('<li>').append(a);
+		return generateLink($el.html(), id);
 	}
 
 	function processLevel (tocs) {
@@ -67,7 +72,9 @@
 		} while (i < headings.length);
 		return tocs;
 	}
+	
 	var tocRoot = processLevel($('<ul>'));
+	tocRoot.append(generateLink(config.tocComments, 'isso-thread'));
 
 	root
 		.prepend(
