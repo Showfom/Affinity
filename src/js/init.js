@@ -7,5 +7,6 @@
   var _default = {
   	tocName: 'Contents'
   };
-  $.m_config = $.extend({}, _default, $('#theme-config').data());
+  $.j = {};
+  $.j.m_config = $.extend({}, _default, $('#theme-config').data());
 })();

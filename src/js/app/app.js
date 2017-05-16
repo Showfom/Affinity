@@ -43,4 +43,4 @@
 	if (style.textContent.length > 0) {
 		$(body).append(style);
 	}
-})(document, document.body, $.m_config);
+})(document, document.body, $.j.m_config);

@@ -1,6 +1,6 @@
 /* Set a default cover image if there's none (in partials/loop.hbs) */
-(function (config) {
-	var defImg = replaceVariable(config.defCoverImage);
+(function ($j, config) {
+	var defImg = $j.m_replaceVariable(config.defCoverImage);
 	if (!defImg) return ;
 
 	$('a.no-cover').each(function (i, el) {
@@ -8,4 +8,4 @@
 			.removeClass('no-cover')
 			.css({backgroundImage: 'url("' + defImg + '")'});
 	});
-})($.m_config);
+})($.j, $.j.m_config);

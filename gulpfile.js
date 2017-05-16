@@ -82,6 +82,9 @@ gulp.task('minify', function() {
         .pipe(gulp.dest(assetsDir));
 
     var jsLicense = new PreserveLicense();
+    var mangleProperties = {
+      regex: /^m_/
+    };
     gulp.src([
     			'./src/js/lib/*.js',
     			'./src/js/init.js',
@@ -91,10 +94,9 @@ gulp.task('minify', function() {
         .pipe(through.obj(jsLicense.save()))
         .pipe(uglify({
           mangle: {
-            properties: {
-              regex: /^m_/
-            }
-          }
+            properties: mangleProperties
+          },
+          mangleProperties: mangleProperties
         }))
         .pipe(through.obj(jsLicense.restore()))
         .pipe(rename({
