@@ -1,4 +1,4 @@
-/* Add ToC to current page. */
+/*! ghost.toc for affinity | (c) Jixun | MIT License */
 (function () {
 	var root = $('.content-post-body');
 	var headings = $('h1,h2,h3,h4,h5,h6', root);
@@ -73,10 +73,17 @@
 
 	fixTocScroll();
 	/* if there's already hash prepended to the url, scroll to it. */
+
 	function fixTocScroll () {
 		var el = d.getElementById(location.hash.slice(1));
 		if (el) {
 			scrollTop($(el).position().top);
 		}
+	}
+
+	function scrollTop (top) {
+		// FIXME: only change one of the height.
+		$('#content').scrollTop(top);
+		$(window).scrollTop(top);
 	}
 })();

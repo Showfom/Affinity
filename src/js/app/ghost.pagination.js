@@ -1,4 +1,4 @@
-/*! jQuery.pagination for Ghost | (c) Jixun | MIT License */
+/*! ghost.pagination for affinity | (c) Jixun | MIT License */
 $(function () {
   var pageItemClass = 'page-item';
   var activeClass = 'active';

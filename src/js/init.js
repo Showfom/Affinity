@@ -1,8 +1,18 @@
 (function () {
+	var style = document.createElement('style');
+  document.body.appendChild(style);
+
   var base = $('link[type*="rss+xml"]')
     .attr('href').replace(/\/(feed|rss)\/?$/i, '') || '';
 
   $.base = base;
+
+	var defReplace = {
+		rand: function () {
+			return ~~(Math.random() * 10000000);
+		},
+		base: $.base
+	};
 
   var _default = {
   	tocName: 'Contents'
@@ -25,5 +35,9 @@
   	},
 
     m_config: $.extend({}, _default, $('#theme-config').data()),
+
+    m_addStyle: function (styleText) {
+      style.textContent += styleText;
+    }
   };
 })();
