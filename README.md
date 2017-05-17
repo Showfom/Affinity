@@ -28,7 +28,7 @@ Active it
 * jQuery ToC and Pagination by [@JixunMoe](https://jixun.moe/)
 
 ### CSS Framework
-* spectre.css [https://picturepan2.github.io/spectre/](https://picturepan2.github.io/spectre/)
+* Spectre.css [https://picturepan2.github.io/spectre/](https://picturepan2.github.io/spectre/)
 
 ## Author
 * [@Showfom](https://github.com/Showfom)
@@ -134,7 +134,7 @@ Affinity 采用 jQuery 实现了章节目录和首页分页功能，不需要任
 * jQuery ToC and Pagination by [@JixunMoe](https://jixun.moe/)
 
 ### CSS 框架
-* spectre.css [https://picturepan2.github.io/spectre/](https://picturepan2.github.io/spectre/)
+* Spectre.css [https://picturepan2.github.io/spectre/](https://picturepan2.github.io/spectre/)
 
 ## 作者
 * [@Showfom](https://github.com/Showfom)
