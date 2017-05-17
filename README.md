@@ -2,15 +2,23 @@
 
 ## Getting Started
 
-Affinity is a clean, minimal, responsive and modern theme that focus on content for Ghost.
+Affinity is a clean, minimal, modern theme that focus on content for Ghost.
 
-Affinity is built with ToC (table of contents) and pagination support without Ghost apps.
+Affinity it is 100% responsive, that means it fits with all different kind of devices in different sizes.
+
+Affinity is compiled with ToC (table of contents) and pagination without any Ghost apps.
 
 ## Install Manually
 
-1. Download the compiled and minified ZIP from [official site](https://u.nu/affinity) or [GitHub](https://u.nu/affinity-github-releases).
-2. Unpack and upload the full folder `affinity` to `/your/path/to/ghost/content/themes`, or simply upload `affinity.zip` on `http(s)://example.com/ghost/settings/general/`
-3. Activate the theme.
+Download the compiled and minified ZIP file [here](https://u.nu/affinity) or [here](https://u.nu/affinity-github-releases).
+
+Unpack and upload the full folder `affinity` to `/your/path/to/ghost/content/themes`
+
+Or
+
+Simple upload the `affinity.zip` on `http(s)://example.com/ghost/settings/general/`
+
+Active it
 
 ## Source & Credit
 
@@ -20,7 +28,7 @@ Affinity is built with ToC (table of contents) and pagination support without Gh
 * jQuery ToC and Pagination by [@JixunMoe](https://jixun.moe/)
 
 ### CSS Framework
-* Spectre.css [https://picturepan2.github.io/spectre/](https://picturepan2.github.io/spectre/)
+* spectre.css [https://picturepan2.github.io/spectre/](https://picturepan2.github.io/spectre/)
 
 ## Author
 * [@Showfom](https://github.com/Showfom)
@@ -29,26 +37,28 @@ Affinity is built with ToC (table of contents) and pagination support without Gh
 
 ## Browser support
 
-* Chrome (latest 4)
-* Microsoft Edge (latest 4)
-* Firefox (latest 4)
-* Safari (latest 4)
-* Opera (latest 4)
+* Chrome (last 4)
+* Microsoft Edge (last 4)
+* Firefox (last 4)
+* Safari (last 4)
+* Opera (last 4)
 * Internet Explorer 10+
 
 ## Screenshots
 
 ### Desktop
 
-![](https://sb.sb.sb/post-images/affinity-desktop.png)
+![](https://sb.sb.sb/post-images/affinity-desktop.png?v=1.2.0)
 
-### Tablet
+### iPad
 
-![](https://sb.sb.sb/post-images/affinity-ipad.png)
+![](https://sb.sb.sb/post-images/affinity-ipad.png?v=1.2.0)
+
+![](https://sb.sb.sb/post-images/affinity-ipad-2.png?v=1.2.0)
 
 ### Mobile
 
-![](https://sb.sb.sb/post-images/affinity-mobile.png)
+![](https://sb.sb.sb/post-images/affinity-mobile.png?v=1.2.0)
 
 ## Live Demo
 
@@ -66,7 +76,7 @@ Feel free to post a new [Github issue](https://github.com/Showfom/Affinity/issue
 
 ### Blog logo
 
-Navigate to `http(s)://example.com/ghost/settings/general/` and upload your logo, size of 48x48 is preferred.
+Go to `http(s)://example.com/ghost/settings/general/` and upload your logo
 
 ### Favicon
 
@@ -74,11 +84,11 @@ Replace your `favicon.ico` with `/your/path/to/ghost/content/themes/affinity/fav
 
 ### Comments
 
-We recommends [Isso](https://github.com/posativ/isso) (self-hosted), Disqus (third-party) or similar services. This is your choice. Affinity has only been tested against [Isso](https://sb.sb/debian-8-ubuntu-16-04-install-isso/).
+We recommend use [Isso](https://github.com/posativ/isso) (self-hosted) or Disqus (third-party) or similar services, it's your own choice, Affinity is only compiled with [Isso](https://sb.sb/debian-8-ubuntu-16-04-install-isso/)
 
 The simplest way is insert your JS code to `/your/path/to/ghost/content/themes/affinity/post.hbs`
 
-after
+under
 
 ```html
 <div class="content-post-comments">
@@ -94,6 +104,12 @@ We use jQuery, you don't need to change anything else.
 
 We publish Affinity under [MIT License](https://github.com/Showfom/Affinity/blob/master/LICENSE)
 
+## Changelog
+
+v1.2.0 - Bug fix.
+
+v1.0.0 - First public release.
+
 ## 中文说明
 
 Affinity 是一款免费小清新的 Ghost 响应式博客主题，由[烧饼博客](https://sb.sb/)制作
@@ -102,9 +118,13 @@ Affinity 采用 jQuery 实现了章节目录和首页分页功能，不需要任
 
 ## 安装教程
 
-1. 在[官网](https://u.nu/affinity)下载最新打包 .zip 版本或在[GitHub](https://u.nu/affinity-github-releases)获取所有的发布版本。
-2. 解压 zip 文件，然后上传 `affinity` 目录到 Ghost 的 `themes` 文件夹，如 `/your/path/to/ghost/content/themes`，或者直接把 `affinity.zip` 上传到 Ghost 后台，如 `http(s)://example.com/ghost/settings/general/`。
-3. 激活即可。
+在[这里](https://u.nu/affinity)下载最新打包 .zip 版本或在[这里](https://u.nu/affinity-github-releases)获取所有的发布版本
+
+解压 zip 文件，然后上传 `affinity` 目录到 Ghost 的 `themes` 文件夹，如 `/your/path/to/ghost/content/themes`
+
+或者直接把 `affinity.zip` 上传到 Ghost 后台，如 `http(s)://example.com/ghost/settings/general/`
+
+然后激活即可
 
 ## JS 框架
 
@@ -123,26 +143,28 @@ Affinity 采用 jQuery 实现了章节目录和首页分页功能，不需要任
 
 ## 浏览器支持
 
-* Chrome (最近 4 个版本)
-* Microsoft Edge (最近 4 个版本)
-* Firefox (最近 4 个版本)
-* Safari (最近 4 个版本)
-* Opera (最近 4 个版本)
+* Chrome (last 4)
+* Microsoft Edge (last 4)
+* Firefox (last 4)
+* Safari (last 4)
+* Opera (last 4)
 * Internet Explorer 10+
 
 ## 截图预览
 
 ### 桌面浏览器
 
-![](https://sb.sb.sb/post-images/affinity-desktop.png)
+![](https://sb.sb.sb/post-images/affinity-desktop.png?v=1.2.0)
 
 ### iPad
 
-![](https://sb.sb.sb/post-images/affinity-ipad.png)
+![](https://sb.sb.sb/post-images/affinity-ipad.png?v=1.2.0)
+
+![](https://sb.sb.sb/post-images/affinity-ipad-2.png?v=1.2.0)
 
 ### 手机
 
-![](https://sb.sb.sb/post-images/affinity-mobile.png)
+![](https://sb.sb.sb/post-images/affinity-mobile.png?v=1.2.0)
 
 ## 在线演示
 
@@ -160,23 +182,27 @@ Affinity 采用 jQuery 实现了章节目录和首页分页功能，不需要任
 
 ### 左上方 Logo
 
-进入 Ghost 后台 `http(s)://example.com/ghost/settings/general/` 上传 Logo 即可。
+进入 Ghost 后台 `http(s)://example.com/ghost/settings/general/` 上传 Logo 即可
 
 ### Favicon
 
-替换 `favicon.ico` 到 `/your/path/to/ghost/content/themes/affinity/favicon.ico`。
+替换 `favicon.ico` 到 `/your/path/to/ghost/content/themes/affinity/favicon.ico`
 
 ### 评论
 
-推荐使用 [Isso](https://github.com/posativ/isso) (自己搭建) 或 Disqus (第三方) 等相关服务, Affinity 目前只适配了 [Isso](https://sb.sb/debian-8-ubuntu-16-04-install-isso/) 的风格。
+推荐使用 [Isso](https://github.com/posativ/isso) (自己搭建) 或 Disqus (第三方) 等相关服务, Affinity 目前只适配了 [Isso](https://sb.sb/debian-8-ubuntu-16-04-install-isso/) 的风格
 
-直接引用你的评论 JS 代码，放到 `/your/path/to/ghost/content/themes/affinity/post.hbs` 下面这段文字的下方即可：
+直接引用你的评论 JS 代码到 `/your/path/to/ghost/content/themes/affinity/post.hbs`
+
+在
 
 ```html
 <div class="content-post-comments">
     <div class="btn btn-primary btn-block">Post your comments here</a></div>
 </div>
 ```
+
+这段 HTML 下方即可
 
 ### 章节目录 (table of contents) / 首页分页
 
@@ -185,3 +211,9 @@ Affinity 采用 jQuery 实现了章节目录和首页分页功能，不需要任
 ## 版权声明
 
 Affinity 采用 [MIT License](https://github.com/Showfom/Affinity/blob/master/LICENSE) 发布
+
+## 发布日志
+
+v1.2.0 - 修复 Bug
+
+v1.0.0 - 首次公开发布主题
