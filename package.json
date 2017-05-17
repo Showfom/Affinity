@@ -46,7 +46,7 @@
   },
   "screenshots": {
     "desktop": "assets/affinity-desktop.png",
-    "mobile": "assets/affinity-desktop.png"
+    "mobile": "assets/affinity-mobile.png"
   },
   "version": "1.2.0"
 }
