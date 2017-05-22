@@ -3,7 +3,8 @@ commit_short = $(shell git rev-parse --short HEAD)
 comment = Build from $(shell git symbolic-ref --short HEAD)\#$(commit)
 
 all:
-	gulp build minify
+	gulp build
+	gulp minify
 	cp -f README.md affinity/README.md
 	cp -f package.json affinity/package.json
 	echo $(comment) > affinity/.build
