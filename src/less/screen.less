@@ -14,6 +14,7 @@
 .section-content {
   flex: 1 1 auto;
   height: 100vh;
+  overflow-x: hidden;
   overflow-y: auto;
   padding-right: 4rem;
 }
@@ -24,6 +25,7 @@
   padding: 2rem;
   flex: 0 0 12rem;
   height: 12rem;
+  left: 0;
   position: absolute;
   text-align: center;
   width: 28rem;
@@ -277,6 +279,7 @@
     }
 
     .btn.btn-primary {
+      height: auto;
       white-space: normal;
 
       a {
@@ -326,11 +329,12 @@
 
     .textarea {
       min-height: 8em;
+      margin-top: 2rem;
     }
   }
 
   .textarea-wrapper .textarea,
-  .auth-section .input-wrapper input {
+  .input-wrapper input {
     background: #fafafa;
     border: .1rem solid #eee;
     border-radius: .2rem;
@@ -382,12 +386,33 @@
 
   .avatar {
     background: #fafafa;
-    margin-right: 1.5rem;
+    flex: 0 0 3.2rem;
+    max-width: 3.2rem;
 
     svg {
       border-radius: 50%;
       height: auto;
       width: 100%;
+    }
+  }
+
+  .text-wrapper {
+    flex: 1 1 auto;
+    overflow: auto;
+    padding-left: 1.5rem;
+  }
+
+  .textarea-wrapper {
+    .textarea {
+      background: #fafafa;
+      border: .1rem solid #eee;
+      border-radius: .2rem;
+      padding: .6rem .8rem;
+
+      &:focus {
+        border-color: #999;
+        outline: none;
+      }
     }
   }
 
@@ -423,6 +448,7 @@
 
   .reply,
   .edit,
+  .cancel,
   .delete {
     &:not(:first-child) {
       font-size: 1.2rem;

@@ -1,13 +1,22 @@
-(function ($) {
+/*! ghost.pagination for affinity | (c) Jixun | MIT License */
+$(function () {
+	'use strict';
+
   var pageItemClass = 'page-item';
   var activeClass = 'active';
 
-  var base = $('link[type*="rss+xml"]')
-    .attr('href').replace(/\/(feed|rss)\/?$/i, '') || '';
+  var base = $.base;
+
+  $(document.body).on('click', 'a.' + pageItemClass, function (e) {
+    if (e.target.href === "#") {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
 
   function pageItem (text, href) {
     return $('<a>')
-      .attr('href', href || 'javascript:void(0)')
+      .attr('href', href || '#')
       .addClass(pageItemClass)
       .text(text);
   }
@@ -25,7 +34,7 @@
     function pageEl (page) {
       var r = pageItem(page, genPageUrl(page));
 
-      if (page == current) {
+      if (page === current) {
         r.addClass(activeClass);
       }
 
@@ -55,7 +64,9 @@
     $el.append(arrowLeft);
     $el.append(scrollContent);
     $el.append(arrowRight);
-    if (max > 1) $el.append(pageEl(max));
+    if (max > 1) {
+      $el.append(pageEl(max));
+    }
 
     updateSlider(0);
 
@@ -66,7 +77,7 @@
     arrowRight.click(function () {
       updateSlider(5);
     });
-  };
+  }
 
   $(function () {
     $('#content>.pagination').each(function () {
@@ -74,4 +85,4 @@
       pagination($self, $self.data('current'), $self.data('max'));
     });
   });
-})(jQuery);
+});

@@ -1,3 +1,14 @@
+commit = $(shell git rev-parse HEAD)
+commit_short = $(shell git rev-parse --short HEAD)
+comment = Build from $(shell git symbolic-ref --short HEAD)\#$(commit)
+
 all:
-	uglifyjs --compress --mangle --mangle-props 1 --mangle-regex="/^m_/" -o assets/affinity.min.js -- src/js/*.js
-	cleancss -o assets/affinity.min.css $(wildcard src/css/*.css)
+	gulp build minify
+	cp -f README.md affinity/README.md
+	cp -f package.json affinity/package.json
+	echo $(comment) > affinity/.build
+	rm -f build/affinity-$(commit_short).zip
+	zip -9llrX build/affinity-$(commit_short).zip affinity
+
+clean:
+	rm -rf build/*.zip

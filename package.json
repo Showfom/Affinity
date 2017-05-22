@@ -4,6 +4,7 @@
     "name": "Showfom Guo",
     "url": "https://sb.sb/ghost-theme-affinity/"
   },
+  "contributors": "https://github.com/Showfom/Affinity/graphs/contributors",
   "demo": "https://ghost.demo.sb/affinity/",
   "description": "Affinity is a clean, minimal, modern and responsive theme that focus on content for Ghost.",
   "devDependencies": {
@@ -14,7 +15,8 @@
     "gulp-less": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.1.2",
-    "less-plugin-autoprefix": "^1.5.1"
+    "less-plugin-autoprefix": "^1.5.1",
+    "through2": "^2.0.3"
   },
   "engines": {
     "ghost": ">=0.9.0 <1.0.0"

@@ -5,3 +5,12 @@ demo/
 !.gitignore
 !.gitattributes
 !.csscomb.json
+!.jshintrc
+src/css
+
+build/*.zip
+
+affinity/README.md
+affinity/package.json
+affinity/assets/*.min.js
+affinity/assets/*.min.css
