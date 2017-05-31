@@ -8,7 +8,7 @@ $(function () {
   var base = $.base;
 
   $(document.body).on('click', 'a.' + pageItemClass, function (e) {
-    if (e.target.href === "#") {
+    if (e.target.getAttribute('href') === "#") {
       e.preventDefault();
       e.stopPropagation();
     }
@@ -51,31 +51,38 @@ $(function () {
         scrollContent.append(pageEl(i));
       }
 
-      arrowLeft.toggle(sliderStart > 2);
-      arrowRight.toggle(sliderEnd < max - 1);
+      arrowScrollLeft.toggle(sliderStart > 2);
+      arrowScrollRight.toggle(sliderEnd < max - 1);
     }
 
-    var arrowLeft = arrow('<');
-    var arrowRight = arrow('>');
+    var arrowScrollLeft = arrow('←');  // « ◀ ← 👉($.j.m_emoji('F09F9188'))
+    var arrowScrollRight = arrow('→'); // » ▶ → 👈($.j.m_emoji('F09F9189'))
     var scrollContent = $('<span>');
 
     $el.empty();
+    if (current > 1) {
+      $el.append(pageItem('‹', genPageUrl(1)));
+    }
     $el.append(pageEl(1));
-    $el.append(arrowLeft);
+    $el.append(arrowScrollLeft);
     $el.append(scrollContent);
-    $el.append(arrowRight);
+    $el.append(arrowScrollRight);
     if (max > 1) {
       $el.append(pageEl(max));
+
+      if (current < max) {
+        $el.append(pageItem('›', genPageUrl(current + 1)));
+      }
     }
 
     updateSlider(0);
 
-    arrowLeft.click(function () {
-      updateSlider(-5);
+    arrowScrollLeft.click(function () {
+      updateSlider(-4);
     });
 
-    arrowRight.click(function () {
-      updateSlider(5);
+    arrowScrollRight.click(function () {
+      updateSlider(4);
     });
   }
 
