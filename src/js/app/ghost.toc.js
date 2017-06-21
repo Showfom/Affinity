@@ -21,7 +21,7 @@
 		var r = 'h-' + id;
 		var i = 2;
 		while (document.getElementById(r)) {
-			r = id + '-' + i;
+			r = 'h-' + id + '-' + i;
 			i++;
 		}
 		return r;
@@ -37,12 +37,17 @@
 	function generateItem (el) {
 		var $el = $(el);
 		var id = $el.attr('id');
+		var inject;
 		if (!id) {
 			id = uniqueId(strip($el.text()));
-			$('<span>').attr('id', id).prependTo($el);
+			inject = $('<span>').attr('id', id);
 		}
 
-		return generateLink($el.html(), id);
+		var r = generateLink($el.html(), id);
+		if (inject) {
+			inject.prependTo($el);
+		}
+		return r;
 	}
 
 	function processLevel (tocs) {
