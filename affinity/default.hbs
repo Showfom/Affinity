@@ -2,21 +2,21 @@
 <html>
 <head>
     {{!-- Document Settings --}}
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     {{!-- Page Meta --}}
-<title>{{meta_title}}</title>
-<meta name="description" content="{{meta_description}}" />
+    <title>{{meta_title}}</title>
+
     {{!-- Mobile Meta --}}
-<meta name="HandheldFriendly" content="True" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    {{!-- Brand icon --}}
-<link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     {{!-- Styles'n'Scripts --}}
-<link rel="stylesheet" type="text/css" href="{{asset "affinity.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "affinity.min.css"}}" />
 
     {{!-- Ghost outputs important style and meta data with this tag --}}
-{{ghost_head}}
+    {{ghost_head}}
 </head>
 <body class="{{body_class}}">
     <section class="section">

@@ -26,7 +26,8 @@
    */
   var _default = {
     tocName: 'Contents',
-    tocComments: 'Comments'
+    tocComments: 'Comments',
+    defCoverImage: ''
   };
 
   /**
