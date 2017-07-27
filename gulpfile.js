@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var less = require('gulp-less');
 var cleancss = require('gulp-clean-css');
 var csscomb = require('gulp-csscomb');
@@ -85,19 +86,23 @@ gulp.task('minify', function() {
     var mangleProperties = {
       regex: /^m_/
     };
+    var uglify_pipe = uglify({
+      mangle: {
+        properties: mangleProperties
+      },
+      // mangleProperties: mangleProperties
+    }).on('error', function (err) {
+		gutil.log(gutil.colors.red('[Error]'), err.toString());
+		this.emit('end');
+	});
     gulp.src([
-    			'./src/js/lib/*.js',
-    			'./src/js/init.js',
-    			'./src/js/app/*.js',
-    		])
+                './src/js/lib/*.js',
+                './src/js/init.js',
+                './src/js/app/*.js',
+            ])
         .pipe(concat('affinity.js'))
         .pipe(through.obj(jsLicense.save()))
-        .pipe(uglify({
-          mangle: {
-            properties: mangleProperties
-          },
-          mangleProperties: mangleProperties
-        }))
+        .pipe(uglify_pipe)
         .pipe(through.obj(jsLicense.restore()))
         .pipe(rename({
             suffix: '.min'
