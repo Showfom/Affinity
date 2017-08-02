@@ -106,6 +106,8 @@ We publish Affinity under [MIT License](https://github.com/Showfom/Affinity/blob
 
 ## Changelog
 
+v1.4.0 - Compatible with Ghost 1.0.2, for users who are still using Ghost <= 0.11.0, please use v1.2.0 instead.
+
 v1.2.0 - Bug fix.
 
 v1.0.0 - First public release.
@@ -213,6 +215,8 @@ Affinity 采用 jQuery 实现了章节目录和首页分页功能，不需要任
 Affinity 采用 [MIT License](https://github.com/Showfom/Affinity/blob/master/LICENSE) 发布
 
 ## 发布日志
+
+v1.4.0 - 兼容 Ghost 1.0.2 使用 0.11.0 及以下版本的用户请勿升级
 
 v1.2.0 - 修复 Bug
 
