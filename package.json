@@ -19,8 +19,11 @@
     "less-plugin-autoprefix": "^1.5.1",
     "through2": "^2.0.3"
   },
+  "scripts": {
+    "make": "make"
+  },
   "engines": {
-    "ghost": ">=1.0.2 <1.1.0"
+    "ghost": ">=1.0.2 <1.9.0"
   },
   "gpm": {
     "categories": [
@@ -49,7 +52,7 @@
     "desktop": "assets/affinity-desktop.png",
     "mobile": "assets/affinity-mobile.png"
   },
-  "version": "1.4.0",
+  "version": "1.4.1",
   "config": {
     "posts_per_page": 12
   }
