@@ -5,8 +5,6 @@ $(function () {
   var pageItemClass = 'page-item';
   var activeClass = 'active';
 
-  var base = $.base;
-
   $(document.body).on('click', 'a.' + pageItemClass, function (e) {
     if (e.target.getAttribute('href') === "#") {
       e.preventDefault();
@@ -25,14 +23,14 @@ $(function () {
     return pageItem(text).addClass('arrow');
   }
 
-  function genPageUrl (page) {
+  function genPageUrl (base, page) {
     if (page <= 1) { return base + '/'; }
     return base + '/page/' + parseInt(page) + '/';
   }
 
-  function pagination ($el, current, max) {
+  function pagination ($el, base, current, max) {
     function pageEl (page) {
-      var r = pageItem(page, genPageUrl(page));
+      var r = pageItem(page, genPageUrl(base, page));
 
       if (page === current) {
         r.addClass(activeClass);
@@ -61,7 +59,7 @@ $(function () {
 
     $el.empty();
     if (current > 1) {
-      $el.append(pageItem('‹', genPageUrl(1)));
+      $el.append(pageItem('‹', genPageUrl(base, 1)));
     }
     $el.append(pageEl(1));
     $el.append(arrowScrollLeft);
@@ -71,7 +69,7 @@ $(function () {
       $el.append(pageEl(max));
 
       if (current < max) {
-        $el.append(pageItem('›', genPageUrl(current + 1)));
+        $el.append(pageItem('›', genPageUrl(base, current + 1)));
       }
     }
 
@@ -89,7 +87,8 @@ $(function () {
   $(function () {
     $('#content>.pagination').each(function () {
       var $self = $(this);
-      pagination($self, $self.data('current'), $self.data('max'));
+      var baseUrl = $('a', $self).attr('href').replace(/\/(page\/\d+\/)?$/, '');
+      pagination($self, baseUrl, $self.data('current'), $self.data('max'));
     });
   });
 });
