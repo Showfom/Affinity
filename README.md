@@ -1,4 +1,4 @@
-![](https://sb.sb.sb/post-images/affinity.png)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity.png)
 
 ## Getting Started
 
@@ -48,25 +48,21 @@ Active it
 
 ### Desktop
 
-![](https://sb.sb.sb/post-images/affinity-desktop.png?v=1.2.0)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity-desktop.png?v=1.2.0)
 
 ### iPad
 
-![](https://sb.sb.sb/post-images/affinity-ipad.png?v=1.2.0)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity-ipad.png?v=1.2.0)
 
-![](https://sb.sb.sb/post-images/affinity-ipad-2.png?v=1.2.0)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity-ipad-2.png?v=1.2.0)
 
 ### Mobile
 
-![](https://sb.sb.sb/post-images/affinity-mobile.png?v=1.2.0)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity-mobile.png?v=1.2.0)
 
 ## Live Demo
 
-[Live Demo](https://affinity.demo.sb/)
-
-[烧饼博客](https://sb.sb/)
-
-[季寻日志](https://jixun.moe/)
+N/A
 
 ## Getting Support
 
@@ -156,25 +152,21 @@ Affinity 采用 jQuery 实现了章节目录和首页分页功能，不需要任
 
 ### 桌面浏览器
 
-![](https://sb.sb.sb/post-images/affinity-desktop.png?v=1.2.0)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity-desktop.png?v=1.2.0)
 
 ### iPad
 
-![](https://sb.sb.sb/post-images/affinity-ipad.png?v=1.2.0)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity-ipad.png?v=1.2.0)
 
-![](https://sb.sb.sb/post-images/affinity-ipad-2.png?v=1.2.0)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity-ipad-2.png?v=1.2.0)
 
 ### 手机
 
-![](https://sb.sb.sb/post-images/affinity-mobile.png?v=1.2.0)
+![](https://cdn.loli.net/sb.sb.sb/post-images/affinity-mobile.png?v=1.2.0)
 
 ## 在线演示
 
-[Live Demo](https://affinity.demo.sb/)
-
-[烧饼博客](https://sb.sb/)
-
-[季寻日志](https://jixun.moe/)
+暂无
 
 ## 获取支持
 
